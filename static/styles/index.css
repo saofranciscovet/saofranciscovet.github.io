@@ -2,9 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-body::-webkit-scrollbar {
-    width: 0em;
+* {
+    box-sizing: border-box;
 }
+
+::-webkit-scrollbar-track {
+	border: 5px solid white;
+	border-color: transparent;
+	background-color: #b2bec3;
+}
+
+::-webkit-scrollbar {
+	width: .5rem;
+	background-color: #dfe6e9;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #74b9ff;
+	border-radius: 10px;
+}
+
 
 body {
     background-color: #d0e0e0 !important;
@@ -32,7 +49,7 @@ section.active {
 }
 
 .navbar-brand {
-    display: none;
+    pointer-events: none;
 }
 
 .navbar-nav {
@@ -156,8 +173,11 @@ iframe {
     width: 40%;
     float: right;
     clear: both;
-    margin-top: -20rem;
     max-width: 100%;
+}
+
+.container-image {
+    margin-top: -25rem;
 }
 
 #face-icon {
@@ -166,7 +186,7 @@ iframe {
     margin-top: 2.8rem; 
 }
 
-.fa-instagram {
+#insta-icon {
     position: absolute;
     margin-left: 1rem;
     margin-top: 2.8rem; 
@@ -202,28 +222,45 @@ input {
     border-radius: 0rem !important;
 }
 
+
 .social-button {
-    margin-bottom: 1rem;
     display: inline-block;
     color: #FFFFFF;
     border-radius: 2rem;
     padding: 10px;
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: .9rem;
     line-height: 1;
 }
 
 .whatsapp-button {
-    background-color: #25D366;
+    background-color: #25D366 !important;
 }
 
 .facebook-button {
-    background-color: #1a75e4;
+    background-color: #1a75e4 !important;
+}
+
+.instagram-button {
+    background-color: #E1306C !important;
 }
 
 .texts {
     margin-top: 5rem;
+}
+
+.full-width-image {
+    object-fit: cover;
+    height: 50% !important;
+    position: relative;
+    height: auto;
+    width: 100%;
+    position: absolute; 
+}
+
+.social {
+    width: 100%;
 }
 
 @media(max-width: 958px) {
@@ -235,9 +272,23 @@ input {
         margin-top: 3rem;
     }
 
-    .container-form {
-        position: unset !important;
-        margin-left: 0 !important;
-        width: 90vw !important;
+    .navbar-brand {
+        display: none;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .social-button {
+        width: 7rem;
+        font-size: .8rem;
+        margin-bottom: -1rem;
+    }
+
+    .navbar-nav li{
+        display: inline-block;
+        padding: 0px 10px;
     }
 }

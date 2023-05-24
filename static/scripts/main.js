@@ -39,3 +39,15 @@ moreButton.addEventListener('click', changeSection);
 moreButton.addEventListener('click', function(e) {
   document.querySelector('#location').classList.add('current');
 })
+
+window.addEventListener('scroll', function() {
+  var minhaDiv = document.getElementById('minhaDiv');
+  var posicao = minhaDiv.getBoundingClientRect().top;
+  var alturaDaTela = window.innerHeight;
+
+  if (posicao < alturaDaTela) {
+    minhaDiv.classList.add('aparecendo');
+  } else {
+    minhaDiv.classList.remove('aparecendo');
+  }
+});

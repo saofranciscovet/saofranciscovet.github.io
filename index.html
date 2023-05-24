@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand">João Pedro Favarato</a>
+            <a class="navbar-brand"><img src="static/styles/images/logo.png" width="80" height="80"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,6 +28,7 @@
                         <a class="nav-link" id="projects" href="#contactS">Contato</a>
                     </li>
                 </ul>
+                <a id="contact" class="btn">Fale conosco</a>
             </div>
         </div>
     </nav>
@@ -38,13 +39,15 @@
             <h1 class="big-text">Jardim de São Francisco</h1>
             <div class="small-text">Há <span id="years">563 anos</span> consertando seu doguinho</div>
             <button class="btn btn-transition" id="moreAbout" href="#locationS">Conheça mais</button>
-            <a href="https://www.instagram.com/jardimdesaofranciscovet/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="https://www.instagram.com/jardimdesaofranciscovet/" target="_blank"><i class="fa-brands fa-instagram fa-xl" id="insta-icon"></i></a>
             <a href="https://www.facebook.com/jardimdesaofransciscovet" target="_blank"><i class="fa-brands fa-facebook fa-xl" id="face-icon"></i></a>
+        </div>
+
+        <div class="container container-image">
             <img src="static/styles/images/vet.png" class="img-main">
         </div>
 
         <div class="container container-about">
-            <div class="big-text"></div>
         </div>
     </section>
 
@@ -52,7 +55,7 @@
         <div class="container container-location">
             <div class="texts">
                 <h1 class="big-text" id="location-text">Nossa localização</div>
-                <h1 class="small-text" id="location-text">Av. João Barbosa de Moraes, 685 - Vila Zeferina, Itaquaquecetuba - SP, 08576-070</h1>
+                <h2 class="small-text" id="location-text">Av. João Barbosa de Moraes, 685 - Vila Zeferina, Itaquaquecetuba - SP, 08576-070</h2>
             </div>
             <div class="mapouter">
                 <div class="gmap_canvas">
@@ -70,18 +73,21 @@
                 <h1 class="small-text roboto"><span style="color: #1a8789">Horário</span>: 8:00 - 17:30</h1>
             </div>
             <div class="social">
-                <a href="https://api.whatsapp.com/send?phone=5511959203565" class="whatsapp-button social-button">
+                <a href="https://api.whatsapp.com/send?phone=5511959203565" class="whatsapp-button social-button btn-transition">
                     <i class="fa-brands fa-whatsapp fa-xl"></i>
                     WhatsApp
                 </a>
-                <a href="" class="social-button facebook-button">
+                <a href="https://www.facebook.com/jardimdesaofransciscovet" class="social-button facebook-button btn-transition">
                     <i class="fa-brands fa-facebook fa-xl"></i>
                     Facebook
+                </a>
+                <a href="https://www.instagram.com/jardimdesaofranciscovet/" class="social-button instagram-button btn-transition">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    Instagram
                 </a>
             </div>
         </div>
     </section>
-
 
     <script src="static/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
