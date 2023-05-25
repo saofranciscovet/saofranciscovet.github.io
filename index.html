@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9ae4d8f0c6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="stylesheet" href="static/styles/css/index.css">
+    <link rel="stylesheet" href="static/styles/css/mobile.css">
+    <link rel="stylesheet" href="static/styles/css/buttons.css">
+    <link rel="stylesheet" href="static/styles/css/containers.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Clínica Veterinária Jardim de São Francisco</title>
 </head>
@@ -37,7 +40,7 @@
             <div class="medium-text">Clínica Veterinária</div>
             <h1 class="big-text">Jardim de São Francisco</h1>
             <div class="small-text">Há <span id="years">563 anos</span> consertando seu doguinho</div>
-            <button class="btn btn-transition" id="moreAbout" href="#locationS">Conheça mais</button>
+            <button class="btn btn-transition" id="moreAbout">Conheça mais</button>
             <a href="https://www.instagram.com/jardimdesaofranciscovet/" target="_blank"><i class="fa-brands fa-instagram fa-xl" id="insta-icon"></i></a>
             <a href="https://www.facebook.com/jardimdesaofransciscovet" target="_blank"><i class="fa-brands fa-facebook fa-xl" id="face-icon"></i></a>
         </div>
@@ -46,30 +49,36 @@
             <img src="static/styles/images/vet.png" class="img-main">
         </div>
 
-        <div class="container container-about">
+        <div class="container container-about" id="containerAbout">
+            <div class="big-text">Sobre nós</div>
+            <div class="small-text roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
         </div>
+        <p style="margin-top: 40rem">oi</p>
     </section>
 
     <section id="locationS">
+        <center>
         <div class="container container-location">
             <div class="texts">
-                <h1 class="big-text" id="location-text">Nossa localização</div>
-                <h2 class="small-text" id="location-text">Av. João Barbosa de Moraes, 685 - Vila Zeferina, Itaquaquecetuba - SP, 08576-070</h2>
+                <div class="big-text" id="location-text">Nossa localização</div>
+                <div class="small-text" id="location-text">Av. João Barbosa de Moraes, 685 - Vila Zeferina, Itaquaquecetuba - SP, 08576-070</div>
             </div>
+            
             <div class="mapouter">
                 <div class="gmap_canvas">
                     <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Av. João Barbosa de Moraes, 685 - Vila Zeferina, Itaquaquecetuba - SP, 08576-070&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
             </div>
         </div>
+        </center>
     </section>
 
     <section id="contactS">
         <div class="container container-contact">
-            <h1 class="big-text">Agende sua consulta ou <br> tire suas dúvidas</h1>
+            <div class="big-text">Agende sua consulta ou <br> tire suas dúvidas</div>
             <div class="texts">
-                <h1 class="small-text roboto"><span style="color: #1a8789">Telefone</span>: +55 11 94949-3434</h1>
-                <h1 class="small-text roboto"><span style="color: #1a8789">Horário</span>: 8:00 - 17:30</h1>
+                <div class="small-text roboto"><span style="color: #1a8789">Telefone</span>: +55 11 94949-3434</div>
+                <div class="small-text roboto"><span style="color: #1a8789">Horário</span>: 8:00 - 17:30</div>
             </div>
             <div class="social">
                 <a href="https://api.whatsapp.com/send?phone=5511959203565" class="whatsapp-button social-button btn-transition">

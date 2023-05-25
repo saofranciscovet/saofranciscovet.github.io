@@ -35,11 +35,6 @@ navLinks.forEach(link => {
   });
 });
 
-moreButton.addEventListener('click', changeSection);
-moreButton.addEventListener('click', function(e) {
-  document.querySelector('#location').classList.add('current');
-})
-
 window.addEventListener('scroll', function() {
   var minhaDiv = document.getElementById('minhaDiv');
   var posicao = minhaDiv.getBoundingClientRect().top;
@@ -50,4 +45,17 @@ window.addEventListener('scroll', function() {
   } else {
     minhaDiv.classList.remove('aparecendo');
   }
+});
+
+function scrollTo(elementId) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.scrollIntoView(
+      { behavior: "smooth" }
+    );
+  }
+}
+
+moreButton.addEventListener("click", function() {
+  scrollTo("containerAbout");
 });

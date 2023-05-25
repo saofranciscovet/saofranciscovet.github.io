@@ -1,0 +1,42 @@
+@media(max-width: 958px) {
+    .img-main {
+        display: none;
+    }
+    
+    .container-main, .container-location, .container-contancts {
+        margin-top: 3rem;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .social-button {
+        width: 8.1rem;
+        font-size: 1rem;
+        margin-bottom: -1rem;
+    }
+
+    .navbar-nav li{
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+    iframe {
+        width: 90vw !important;
+        height: 60vh !important;
+    }
+
+    .small-text {font-size: 1.3rem;}
+    .medium-text {font-size: 1.5rem;}
+    .big-text {font-size: 2.5rem;}
+
+    .container-about {
+        margin-top: 30rem;
+    }
+}

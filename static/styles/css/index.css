@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+	border: 5px solid white;
+	border-color: transparent;
+	background-color: #b2bec3;
+}
+
+::-webkit-scrollbar {
+	width: .5rem;
+	background-color: #dfe6e9;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #74b9ff;
+	border-radius: 10px;
+}
+
+
+body {
+    background-color: #d0e0e0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+  
+section.active {
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+}
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-brand {
+    pointer-events: none;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.navbar-nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar-nav a::after{
+    content: "";
+    background-color: #167274;
+    height: 3px;
+    width: 0;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover::after,
+.navbar-nav a.current::after {
+    width: 100%;
+    transition: width 0.2s linear;
+}
+
+.navbar-nav a {
+    color: #000000 !important;
+    font-size: 1.2rem;
+}
+
+.small-text {
+    font-size: 1.5rem;
+    font-family: Poppins;
+}
+
+.medium-text {
+    font-size: 2rem;
+    font-family: Poppins;
+}
+
+.big-text {
+    font-size: 3.5rem;
+}
+
+.roboto {
+    font-family: Roboto;
+}
+
+#years {
+    color: #1a8789;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+iframe {
+    width: 70vw !important;
+    height: 60vh !important;
+}
+
+.img-main {
+    width: 40%;
+    float: right;
+    clear: both;
+    max-width: 100%;
+}
+
+#face-icon {
+    position: absolute;
+    margin-left: 3.2rem;
+    margin-top: 2.8rem; 
+}
+
+#insta-icon {
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 2.8rem; 
+}
+
+.texts {
+    margin-top: 5rem;
+}
+
+.full-width-image {
+    object-fit: cover;
+    height: 50% !important;
+    position: relative;
+    height: auto;
+    width: 100%;
+    position: absolute; 
+}
+
+.social {
+    width: 100%;
+}
+
