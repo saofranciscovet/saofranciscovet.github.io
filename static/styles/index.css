@@ -101,10 +101,6 @@ section.active {
     font-family: Roboto;
 }
 
-.container-main {
-    margin-top: 8rem;
-}
-
 .btn {
     color: white !important;
 }
@@ -141,6 +137,10 @@ section.active {
    
 .btn-transition:hover::before {
     transform: translateX(0); 
+}
+
+.container-main {
+    margin-top: 10rem;
 }
 
 .container-location, .container-contact {
@@ -282,8 +282,8 @@ input {
     }
 
     .social-button {
-        width: 7rem;
-        font-size: .8rem;
+        width: 8.1rem;
+        font-size: 1rem;
         margin-bottom: -1rem;
     }
 
@@ -291,4 +291,13 @@ input {
         display: inline-block;
         padding: 0px 10px;
     }
+
+    iframe {
+        width: 90vw !important;
+        height: 60vh !important;
+    }
+
+    .small-text {font-size: 1.3rem;}
+    .medium-text {font-size: 1.5rem;}
+    .big-text {font-size: 2.5rem;}
 }
