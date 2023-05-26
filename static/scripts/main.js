@@ -49,14 +49,22 @@ window.addEventListener('scroll', function() {
 
 function scrollTo(elementId) {
   var element = document.getElementById(elementId);
+  var navbarHeight = document.getElementById('navbar').offsetHeight;
+
   if (element) {
-    element.scrollIntoView(
-      { behavior: "smooth" }
-    );
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition - navbarHeight;
+
+    window.scrollBy({
+      top: offsetPosition,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 }
 
-moreButton.addEventListener("click", function() {
+moreButton.addEventListener("click", function(e) {
+  e.preventDefault();
   scrollTo("containerAbout");
 });
 
