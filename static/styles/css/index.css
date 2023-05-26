@@ -22,9 +22,8 @@
 	border-radius: 10px;
 }
 
-
 body {
-    background-color: #d0e0e0 !important;
+    background-color: #e9f0f0 !important;
     width: 100%;
     height: 100%;
 }
@@ -101,7 +100,7 @@ section.active {
     font-family: Roboto;
 }
 
-#years {
+.accent {
     color: #1a8789;
 }
 

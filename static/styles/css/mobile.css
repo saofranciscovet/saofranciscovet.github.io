@@ -2,9 +2,18 @@
     .img-main {
         display: none;
     }
-    
-    .container-main, .container-location, .container-contancts {
-        margin-top: 3rem;
+
+    .container-main {
+        margin-top: 3rem !important;
+        border: 1px solid red;
+    }
+
+    .container-location {
+        margin-top: -2rem !important;
+    }
+
+    .container-contact {
+        margin-top: 2rem !important;
     }
 
     .navbar-brand {
@@ -37,6 +46,6 @@
     .big-text {font-size: 2.5rem;}
 
     .container-about {
-        margin-top: 30rem;
+        margin-top: 30rem !important;
     }
 }
