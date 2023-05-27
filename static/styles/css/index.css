@@ -2,6 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
+.navbar {
+    background-color: #1a8789;
+}
+
+.navbar-brand {
+    pointer-events: none;
+    color: white !important;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.navbar-nav li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.navbar-nav a::after{
+    content: "";
+    background-color: white; /* 167274 */
+    height: 3px;
+    width: 0;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover::after,
+.navbar-nav a.current::after {
+    width: 100%;
+    transition: width 0.2s linear;
+}
+
+.navbar-nav a {
+    color: white !important;
+    font-size: 1.2rem;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -39,51 +81,6 @@ section.active {
     opacity: 1;
     height: auto;
     overflow: visible;
-}
-
-.navbar {
-    background-color: #1a8789;
-}
-
-.navbar-collapse {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.navbar-brand {
-    pointer-events: none;
-}
-
-.navbar-nav {
-    list-style: none;
-}
-
-.navbar-nav li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.navbar-nav a::after{
-    content: "";
-    background-color: white; /* 167274 */
-    height: 3px;
-    width: 0;
-    margin: auto;
-    display: block;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-}
-
-.navbar-nav a:hover::after,
-.navbar-nav a.current::after {
-    width: 100%;
-    transition: width 0.2s linear;
-}
-
-.navbar-nav a {
-    color: white !important;
-    font-size: 1.2rem;
 }
 
 .small-text {
@@ -155,4 +152,3 @@ iframe {
 .social {
     width: 100%;
 }
-

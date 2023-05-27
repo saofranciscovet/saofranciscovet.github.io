@@ -15,10 +15,6 @@
         margin-top: 2rem !important;
     }
 
-    .navbar-brand {
-        display: none;
-    }
-
     .social {
         display: flex;
         flex-direction: column !important;
