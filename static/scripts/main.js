@@ -63,9 +63,9 @@ function scrollTo(elementId) {
   }
 }
 
+moreButton.addEventListener('click', changeSection);
 moreButton.addEventListener("click", function(e) {
-  e.preventDefault();
-  scrollTo("containerAbout");
+  document.querySelector("#about").classList.add("current");
 });
 
 let touchstartX = 0;
@@ -117,4 +117,16 @@ document.addEventListener('touchstart', function(event) {
 document.addEventListener('touchend', function(event) {
   touchendX = event.changedTouches[0].clientX;
   handleTouch();
+});
+
+window.addEventListener('scroll', function() {
+  var minhaDiv = document.getElementById('services');
+  var posicao = minhaDiv.getBoundingClientRect().top;
+  var alturaDaTela = window.innerHeight;
+
+  if (posicao < alturaDaTela) {
+    minhaDiv.classList.add('aparecendo');
+  } else {
+    minhaDiv.classList.remove('aparecendo');
+  }
 });

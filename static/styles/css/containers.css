@@ -2,8 +2,12 @@
     margin-top: 10rem;
 }
 
-.container-location, .container-contact {
+.container-contact {
     margin-top: 5rem;
+}
+
+.container-location {
+    margin-top: 30rem;
 }
 
 .container-image {
@@ -20,5 +24,13 @@
 }
 
 .container-about {
-    margin-top: 40rem;
+    margin-top: 5rem;
+}
+
+.container-know {
+    margin-top: 2rem;
+}
+
+.container-services {
+    margin-top: 4rem;
 }

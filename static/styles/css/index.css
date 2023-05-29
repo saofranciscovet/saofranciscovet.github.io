@@ -84,12 +84,10 @@ section.active {
 
 .small-text {
     font-size: 1.5rem;
-    font-family: Poppins;
 }
 
 .medium-text {
     font-size: 2rem;
-    font-family: Poppins;
 }
 
 .big-text {
@@ -97,7 +95,11 @@ section.active {
 }
 
 .roboto {
-    font-family: Roboto;
+    font-family: Roboto !important;
+}
+
+.poppins {
+    font-family: Poppins !important;
 }
 
 .accent {
@@ -150,4 +152,13 @@ iframe {
 
 .social {
     width: 100%;
+}
+
+.escondida {
+    opacity: 0;
+    transition: opacity 0.5s ease-in; 
+}
+  
+.aparecendo {
+    opacity: 1;
 }
