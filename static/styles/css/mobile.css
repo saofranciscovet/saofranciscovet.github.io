@@ -43,4 +43,8 @@
     .container-about {
         margin-top: 2rem !important;
     }
+
+    .container-form {
+        width: 90vw !important;
+    }
 }

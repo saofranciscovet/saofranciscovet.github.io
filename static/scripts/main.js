@@ -130,3 +130,12 @@ window.addEventListener('scroll', function() {
     minhaDiv.classList.remove('aparecendo');
   }
 });
+
+function sendEmail() {
+  var subject = document.getElementById("subject").value;
+  var text = document.getElementById("text").value;
+  var email = "saofranciscovet@gmail.com";
+
+  var mailToLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(text);
+  window.location.href = mailToLink;
+}

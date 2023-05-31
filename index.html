@@ -92,17 +92,29 @@
                             <img src="static/styles/images/sv3.jpg" alt="Imagem 3" class="img-fluid">
                             <p class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                         </div>
+                        <div class="col-md-12">
+                            <img src="static/styles/images/sv6.png" alt="Imagem 4" class="img-fluid">
+                            <p class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="contactS">
             <div class="container container-contact">
-                <span class="big-text accent">Agende sua consulta</span>
-                <span class="big-text accent"><br>ou tire suas dúvidas</span>
-                <div class="texts">
-                    <div class="small-text roboto"><span style="color: #1a8789">Telefone</span>: +55 11 94949-3434</div>
-                    <div class="small-text roboto"><span style="color: #1a8789">Horário</span>: 8:00 - 17:30</div>
+                <h1 class="big-text accent">Fale conosco</h1>
+                <div class="container container-form">
+                    <form>
+                        <div class="mb-3">
+                          <label class="form-label small-text" style="color: white">Assunto</label>
+                          <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label small-text" style="color: white">Mensagem</label>
+                          <textarea class="form-control" id="text" style="resize: none;"></textarea>
+                        </div>
+                        <a type="submit" class="btn btn-transition" onclick="sendEmail()">Enviar</a>
+                    </form>
                 </div>
                 <div class="social">
                     <a href="https://api.whatsapp.com/send?phone=5511959203565" class="whatsapp-button social-button btn-transition">
@@ -117,6 +129,10 @@
                     <i class="fa-brands fa-instagram fa-xl"></i>
                     Instagram
                     </a>
+                </div>
+                <div class="texts">
+                    <div class="small-text roboto"><span style="color: #1a8789">Telefone</span>: +55 11 94949-3434</div>
+                    <div class="small-text roboto"><span style="color: #1a8789">Horário</span>: 8:00 - 17:30</div>
                 </div>
             </div>
         </section>
