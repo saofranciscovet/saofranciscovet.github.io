@@ -42,4 +42,14 @@
     .container-form {
         width: 90vw !important;
     }
+
+    .float{
+        height: 55px !important;
+        width: 55px !important;
+        font-size: 25px !important;
+    }
+    
+    .my-float{
+        margin-top: 16px;
+    }
 }
