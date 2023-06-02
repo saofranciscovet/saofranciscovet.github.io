@@ -15,15 +15,13 @@
 }
 
 .container-form {
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-radius: 1rem;
     background-color: #1a8789;
     height: 18rem;
 }
 
 .container-form input, .container-form textarea {
-    border-radius: 0;
+    border-radius: .5rem;
     width: 100%;
 }
 

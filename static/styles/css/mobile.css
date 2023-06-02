@@ -15,13 +15,8 @@
         margin-top: 2rem !important;
     }
 
-    .social {
-        display: flex;
-        flex-direction: column !important;
-    }
-
     .social-button {
-        width: 8.1rem;
+        width: 7rem;
         font-size: 1rem;
         margin-bottom: -1rem;
     }
