@@ -15,14 +15,15 @@
     list-style: none;
 }
 
-.navbar-nav li{
+.navbar-nav li {
     display: inline-block;
     padding: 0px 10px;
 }
 
-.navbar-nav a::after{
+.navbar-nav a::after {
     content: "";
-    background-color: white; /* 167274 */
+    background-color: white;
+    /* 167274 */
     height: 3px;
     width: 0;
     margin: auto;
@@ -48,19 +49,19 @@
 }
 
 ::-webkit-scrollbar-track {
-	border: 5px solid white;
-	border-color: transparent;
-	background-color: #b2bec3;
+    border: 5px solid white;
+    border-color: transparent;
+    background-color: #b2bec3;
 }
 
 ::-webkit-scrollbar {
-	width: .5rem;
-	background-color: #dfe6e9;
+    width: .5rem;
+    background-color: #dfe6e9;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #74b9ff;
-	border-radius: 10px;
+    background-color: #74b9ff;
+    border-radius: 10px;
 }
 
 body {
@@ -75,7 +76,7 @@ section {
     overflow: hidden;
     transition: opacity 0.3s ease, height 0.3s ease;
 }
-  
+
 section.active {
     opacity: 1;
     height: auto;
@@ -128,13 +129,13 @@ iframe {
 #face-icon {
     position: absolute;
     margin-left: 3.2rem;
-    margin-top: 2.8rem; 
+    margin-top: 2.8rem;
 }
 
 #insta-icon {
     position: absolute;
     margin-left: 1rem;
-    margin-top: 2.8rem; 
+    margin-top: 2.8rem;
 }
 
 .texts {
@@ -147,7 +148,7 @@ iframe {
     position: relative;
     height: auto;
     width: 100%;
-    position: absolute; 
+    position: absolute;
 }
 
 .social {
@@ -156,9 +157,9 @@ iframe {
 
 .escondida {
     opacity: 0;
-    transition: opacity 0.5s ease-in; 
+    transition: opacity 0.5s ease-in;
 }
-  
+
 .aparecendo {
     opacity: 1;
 }

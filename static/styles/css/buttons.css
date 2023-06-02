@@ -17,7 +17,7 @@
     z-index: 1;
     font-family: inherit;
 }
-   
+
 .btn-transition::before {
     content: "";
     position: absolute;
@@ -29,11 +29,11 @@
     transform: translateX(-100%);
     transition: all .3s;
     z-index: -1;
-    
+
 }
-   
+
 .btn-transition:hover::before {
-    transform: translateX(0); 
+    transform: translateX(0);
 }
 
 .social-button {
@@ -60,21 +60,21 @@
     background-color: #E1306C !important;
 }
 
-.float{
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 20px;
-	right: 20px;
-	background-color: #25d366;
-	color: #FFF;
-	border-radius: 50px;
-	text-align: center;
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
     font-size: 30px;
-	box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
 
-.my-float{
-	margin-top: 16px;
+.my-float {
+    margin-top: 16px;
 }

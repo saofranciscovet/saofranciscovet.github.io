@@ -20,7 +20,8 @@
     height: 18rem;
 }
 
-.container-form input, .container-form textarea {
+.container-form input,
+.container-form textarea {
     border-radius: .5rem;
     width: 100%;
 }
