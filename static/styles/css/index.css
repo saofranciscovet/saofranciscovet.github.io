@@ -56,11 +56,11 @@
 
 ::-webkit-scrollbar {
     width: .5rem;
-    background-color: #1a8789;
+    background-color: #dfe6e9;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #1a8789;
+    background-color: #74b9ff;
     border-radius: 10px;
 }
 
@@ -105,6 +105,10 @@ section.active {
 
 .accent {
     color: #1a8789;
+}
+
+.white {
+    color: white;
 }
 
 .texts {
