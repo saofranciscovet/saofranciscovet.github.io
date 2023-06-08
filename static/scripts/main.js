@@ -68,6 +68,21 @@ moreButton.addEventListener("click", function(e) {
   document.querySelector("#about").classList.add("current");
 });
 
+const homeLink = document.querySelector("#homeLink"), aboutLink = document.querySelector("#aboutLink"), contactLink = document.querySelector("#contactLink");
+
+homeLink.addEventListener('click', changeSection);
+homeLink.addEventListener("click", function(e) {
+  document.querySelector("#home").classList.add("current");
+});
+aboutLink.addEventListener('click', changeSection);
+aboutLink.addEventListener("click", function(e) {
+  document.querySelector("#about").classList.add("current");
+});
+contactLink.addEventListener('click', changeSection);
+contactLink.addEventListener("click", function(e) {
+  document.querySelector("#contact").classList.add("current");
+});
+
 let touchstartX = 0;
 let touchendX = 0;
 
