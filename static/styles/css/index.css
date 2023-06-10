@@ -23,7 +23,6 @@
 .navbar-nav a::after {
     content: "";
     background-color: white;
-    /* 167274 */
     height: 3px;
     width: 0;
     margin: auto;

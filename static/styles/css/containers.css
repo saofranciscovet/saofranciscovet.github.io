@@ -8,7 +8,7 @@
 }
 
 .container-location {
-    margin-top: 35rem;
+    margin-top: 37rem;
 }
 
 .container-image {
@@ -16,14 +16,15 @@
 }
 
 .container-form {
-    border-radius: 1rem;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 0rem;
     background-color: #1a8789;
     height: 18rem;
 }
 
 .container-form input,
 .container-form textarea {
-    border-radius: .5rem;
+    border-radius: 0rem;
     width: 100%;
 }
 
