@@ -110,6 +110,10 @@ section.active {
     color: white;
 }
 
+.black {
+    color: black;
+}
+
 .texts {
     display: flex;
     flex-direction: column;
