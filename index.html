@@ -16,24 +16,24 @@
         <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">Jardim de São Francisco</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" id="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                             <a class="nav-link current" aria-current="page" id="home" href="#homeS">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                             <a class="nav-link" id="about" href="#aboutS">Sobre</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                             <a class="nav-link" id="contact" href="#contactS">Contato</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> 
         <section id="homeS" class="active">
             <div class="container container-main">
                 <div class="medium-text">Clínica Veterinária</div>
@@ -273,6 +273,20 @@
                 <a class="text-reset fw-bold" href="/">Jardim de São Francisco</a>
             </div>
         </footer>
+
+        <div class="toast-container bottom-0 start-0 p-3 position-fixed">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="10000">
+                <div class="toast-header">
+                  <img src="static/styles/images/logo.png" class="rounded me-2" width="30px">
+                  <strong class="me-auto" id="doctor-name"></strong>
+                  <small>Agora</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Quer agendar uma consulta? Entre em contato conosco pela seção "Contato".
+                </div>
+            </div>
+        </div>
 
         <script src="static/scripts/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

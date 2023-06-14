@@ -154,3 +154,27 @@ function sendEmail() {
   var mailToLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(text);
   window.location.href = mailToLink;
 }
+
+window.addEventListener('DOMContentLoaded', function() {
+  var toast = new bootstrap.Toast(document.querySelector('.toast'));
+  
+  var delay = Math.floor(Math.random() * (30000 - 25000 + 1)) + 25000;
+  
+  setTimeout(function() {
+      toast.show();
+  }, delay);
+});
+
+
+var names = ["Dr. Percival", "Dra. Myrna"];
+function getRandomIndex(max) {
+  return Math.floor(Math.random() * max);
+}
+
+function updateDoctorName() {
+  var doctorName = document.getElementById("doctor-name");
+  doctorName.innerText = names[getRandomIndex(names.length)];
+}
+
+updateDoctorName();
+
