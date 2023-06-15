@@ -2,6 +2,7 @@ const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
 const moreButton = document.querySelector('#moreAbout')
 
+// Sections
 function changeSection(e) {
   e.preventDefault();
 
@@ -35,6 +36,7 @@ navLinks.forEach(link => {
   });
 });
 
+// ScrollTo
 window.addEventListener('scroll', function() {
   var minhaDiv = document.getElementById('minhaDiv');
   var posicao = minhaDiv.getBoundingClientRect().top;
@@ -83,6 +85,7 @@ contactLink.addEventListener("click", function(e) {
   document.querySelector("#contact").classList.add("current");
 });
 
+// Mobile touch
 let touchstartX = 0;
 let touchendX = 0;
 
@@ -146,6 +149,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// Email
 function sendEmail() {
   var subject = document.getElementById("subject").value;
   var text = document.getElementById("text").value;
@@ -155,6 +159,7 @@ function sendEmail() {
   window.location.href = mailToLink;
 }
 
+// Toast
 window.addEventListener('DOMContentLoaded', function() {
   var toast = new bootstrap.Toast(document.querySelector('.toast'));
   
